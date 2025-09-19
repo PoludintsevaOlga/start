@@ -24,6 +24,10 @@ public class Person {
             System.out.println("Имя не может быть пустым!");
             throw new IllegalArgumentException("Имя не может быть пустым.");
         }
+        if (namePers.length() < 3) {
+            System.out.println("Имя не может быть меньше 3 символов.");
+            throw new IllegalArgumentException("Имя не может быть меньше 3 символов!");
+        }
         this.namePers = namePers;
     }
 
